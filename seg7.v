@@ -1,7 +1,7 @@
 module seg7( clk,rst,sel,seg);
 input clk; //时钟信号
 input rst; //复位信号
-output reg[2:0] sel; //数码管位选端口
+    output reg[2:0] sel; //数码管位选端口不用这样
 output reg[7:0] seg; //数码管段选端口
 reg[3:0] num; //显示的数字或字母的输出端口
 reg[31:0] counter_5kHz; //计数器 1，控制扫描频率为 5kHz
